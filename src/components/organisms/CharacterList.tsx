@@ -42,27 +42,14 @@ export const CharacterList: React.FC = () => {
 				<p>Error: {error.message}</p>
 			) : (
 				<>
-					<Grid2
-						container
-						spacing={2}
-						sx={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center',
-						}}>
+					<Grid2 container spacing={2} display="flex" justifyContent="center">
 						{data?.characters?.results?.map((char: any) => (
 							<Grid2>
 								<CharacterCard {...char} onClick={() => handleOpen(char)} />
 							</Grid2>
 						))}
 					</Grid2>
-					<Box
-						sx={{
-							display: 'flex',
-							justifyContent: 'center',
-							alignItems: 'center',
-							margin: '2rem',
-						}}>
+					<Box sx={paginationStyle}>
 						<Pagination count={5} page={page} onChange={(_, value) => setPage(value)} />
 					</Box>
 
@@ -71,4 +58,10 @@ export const CharacterList: React.FC = () => {
 			)}
 		</Box>
 	);
+};
+const paginationStyle = {
+	display: 'flex',
+	justifyContent: 'center',
+	alignItems: 'center',
+	margin: '2rem',
 };
