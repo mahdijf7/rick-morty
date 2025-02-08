@@ -32,5 +32,6 @@ To run this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/mahdijf7/rick-morty.git
-   cd rick&morty
    ```
+   ## live-link
+    https://starlit-beignet-f9a91d.netlify.app/
