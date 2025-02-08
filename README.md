@@ -1,50 +1,36 @@
-# React + TypeScript + Vite
+# Rick and Morty Characters App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React TypeScript project that fetches and displays characters from the "Rick and Morty" universe using Apollo Client to call a GraphQL API. The project is built with Vite as the bundler and Material-UI (MUI) for UI components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches and displays a list of characters from the **Rick and Morty** TV series using Apollo Client and GraphQL.
+- Displays character information such as name, species, and status.
+- User-friendly UI built with **Material-UI**.
+- **Responsive design** for mobile and desktop screens.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** – A JavaScript library for building user interfaces.
+- **TypeScript** – A strongly typed programming language that builds on JavaScript.
+- **Vite** – A next-generation, fast build tool for modern web applications.
+- **Apollo Client** – A GraphQL client for querying and interacting with GraphQL APIs.
+- **Material-UI (MUI)** – A popular React UI framework for building modern and responsive UIs.
+- **GraphQL** – A query language for APIs used to fetch character data.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To run this project locally, follow these steps:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Prerequisites
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js (>=v14.x.x)
+- Yarn (or npm)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Steps to Install
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mahdijf7/rick-morty.git
+   cd rick&morty
+   ```
